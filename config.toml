@@ -8,8 +8,8 @@ encryption_key = "fhsd6f86f67rt8fw78fw789we78r9789wer6re"
 nonce = "nonce"
 
 [game]
-major_version = 5
-build = 2
+major_version = 0
+build = 0
 content_version = 0
 
 [console]
