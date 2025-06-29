@@ -13,5 +13,5 @@ build = 2
 content_version = 0
 
 [console]
-figlet_text = "PyMagic"
+figlet_text = "PySupercell"
 figlet_font = "slant"
