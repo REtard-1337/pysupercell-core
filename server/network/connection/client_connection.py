@@ -13,33 +13,20 @@ class ClientConnection:
         self.reader = reader
         self.writer = writer
         self.messaging = Messaging(reader, writer, MessageManager(self))
-        self.buffer = bytearray(8192)
+        self.buffer = bytearray()
 
     async def receive(self):
         try:
-            offset = 0
-            while True:
-                data = await self.reader.read(4096)
-                if not data:
-                    break
+            while data := await self.reader.read(4096):
+                self.buffer.extend(data)
 
-                self.buffer[offset : offset + len(data)] = data
-                offset += len(data)
-
-                processed_offset = 0
-                while True:
+                while self.buffer:
                     consumed = await self.messaging.on_receive(
-                        self.buffer[processed_offset:offset], offset - processed_offset
+                        memoryview(self.buffer), len(self.buffer)
                     )
-                    if consumed == 0:
+                    if not consumed:
                         break
-                    processed_offset += consumed
-
-                if processed_offset > 0:
-                    self.buffer[: offset - processed_offset] = self.buffer[
-                        processed_offset:offset
-                    ]
-                    offset -= processed_offset
+                    del self.buffer[:consumed]
 
         except asyncio.CancelledError:
             pass
