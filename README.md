@@ -39,6 +39,12 @@ PyMagic Core is a minimalistic, async Clash of Clans server core written in Pyth
     ```bash
     python3 main.py
     ```
+## Disclaimer  
+This repository is **not affiliated** with, maintained, authorized, endorsed, or sponsored by Supercell.  
+All product and company names are trademarks™ or registered® trademarks of their respective holders.  
+Use of them does not imply any affiliation with or endorsement by them.  
+
+The source code is provided for **educational purposes only**.  
 
 ## License
 
