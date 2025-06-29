@@ -17,15 +17,16 @@
 
 ## Overview
 
-PyMagic Core is a minimalistic, async Clash of Clans server core written in Python from scratch.
+PySupercell Core is lightweight, fully asynchronous core for building servers for any Supercell game — written from scratch in Python.
+
 
 ## Installation
 
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/wisedevik/pymagic-core
-    cd pymagic-core
+    git clone https://github.com/REtard-1337/pysupercell-core
+    cd pysupercell-core
     ```
 
 2. Install requirements:
@@ -48,4 +49,4 @@ The source code is provided for **educational purposes only**.
 
 ## License
 
-[MIT License](https://github.com/wisedevik/pymagic-core/blob/main/LICENSE)
+[MIT License](https://github.com/REtard-1337/pysupercell-core/blob/main/LICENSE)
