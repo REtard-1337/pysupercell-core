@@ -1,6 +1,6 @@
 <div align="center" style="max-width: 100%; overflow-x: auto; margin: 0 auto;">
   <div style="text-align: center; padding: 0 10px; width: 100%;">
-    <h1 style="font-size: clamp(24px, 5vw, 36px); margin: 0 auto;">PyMagic Core</h1>
+    <h1 style="font-size: clamp(24px, 5vw, 36px); margin: 0 auto;">PySupercell Core</h1>
   </div>
 
   <div style="display: flex; justify-content: center; margin: 20px auto; width: 100%;">
